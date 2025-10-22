@@ -364,12 +364,14 @@ section {
     min-height: 100vh;
     display: flex;
     align-items: center;
+    padding: 100px 0;
 }
 
 .timeline {
     max-width: 800px;
     margin: 0 auto;
     position: relative;
+    padding: 2rem 0;
 }
 
 .timeline::before {
@@ -385,8 +387,10 @@ section {
 
 .timeline-item {
     display: flex;
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
     position: relative;
+    align-items: flex-start;
+    gap: 2rem;
 }
 
 .timeline-item:nth-child(odd) {
@@ -394,7 +398,7 @@ section {
 }
 
 .timeline-item:nth-child(even) {
-    flex-direction: row-reverse;
+    flex-direction: row;
 }
 
 .timeline-marker {
@@ -416,18 +420,17 @@ section {
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    width: 45%;
+    width: 100%;
     position: relative;
+    flex: 1;
 }
 
 .timeline-item:nth-child(odd) .timeline-content {
-    margin-right: auto;
-    margin-left: 0;
+    margin: 0;
 }
 
 .timeline-item:nth-child(even) .timeline-content {
-    margin-left: auto;
-    margin-right: 0;
+    margin: 0;
 }
 
 .timeline-content h3 {
