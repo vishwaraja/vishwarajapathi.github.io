@@ -387,10 +387,11 @@ section {
 
 .timeline-item {
     display: flex;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
     position: relative;
-    align-items: flex-start;
+    align-items: center;
     gap: 2rem;
+    transition: all 0.3s ease;
 }
 
 .timeline-item:nth-child(odd) {
@@ -423,6 +424,8 @@ section {
     width: 100%;
     position: relative;
     flex: 1;
+    transition: all 0.3s ease;
+    transform: translateY(0);
 }
 
 .timeline-item:nth-child(odd) .timeline-content {
@@ -431,6 +434,11 @@ section {
 
 .timeline-item:nth-child(even) .timeline-content {
     margin: 0;
+}
+
+.timeline-item:hover .timeline-content {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
 }
 
 .timeline-content h3 {
@@ -488,8 +496,8 @@ section {
 
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 3rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
 }
 
 .skill-category {
@@ -514,7 +522,7 @@ section {
 
 .skill-items {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
 }
 
@@ -861,6 +869,11 @@ section {
 
     .skills-grid {
         grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .skill-items {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
