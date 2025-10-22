@@ -108,6 +108,7 @@ body {
     position: relative;
     overflow: hidden;
     padding: 0;
+    margin-bottom: 0;
 }
 
 .hero::before {
@@ -124,9 +125,12 @@ body {
 .hero-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 80px 20px 0 20px;
+    padding: 100px 20px 50px 20px;
     position: relative;
     z-index: 2;
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .hero-content {
@@ -300,6 +304,7 @@ section {
     display: flex;
     align-items: center;
     padding: 100px 0;
+    margin-top: 0;
 }
 
 .about-content {
