@@ -372,6 +372,7 @@ section {
     margin: 0 auto;
     position: relative;
     padding: 2rem 0;
+    min-height: 600px;
 }
 
 .timeline::before {
@@ -386,20 +387,10 @@ section {
 }
 
 .timeline-item {
-    display: flex;
-    margin-bottom: 3rem;
+    display: block;
+    margin-bottom: 4rem;
     position: relative;
-    align-items: center;
-    gap: 2rem;
     transition: all 0.3s ease;
-}
-
-.timeline-item:nth-child(odd) {
-    flex-direction: row;
-}
-
-.timeline-item:nth-child(even) {
-    flex-direction: row;
 }
 
 .timeline-marker {
@@ -423,17 +414,17 @@ section {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     width: 100%;
     position: relative;
-    flex: 1;
+    margin-left: 3rem;
     transition: all 0.3s ease;
     transform: translateY(0);
 }
 
 .timeline-item:nth-child(odd) .timeline-content {
-    margin: 0;
+    margin-left: 3rem;
 }
 
 .timeline-item:nth-child(even) .timeline-content {
-    margin: 0;
+    margin-left: 3rem;
 }
 
 .timeline-item:hover .timeline-content {
