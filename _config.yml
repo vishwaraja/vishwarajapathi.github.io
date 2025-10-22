@@ -1,0 +1,62 @@
+# GitHub Pages Configuration
+title: "Vishwaraja Pathi - Portfolio"
+description: "Software Engineer & Technology Enthusiast"
+author: "Vishwaraja Pathi"
+email: "vishwarajapathi@example.com"
+
+# Site settings
+baseurl: ""
+url: "https://vishwarajapathi.github.io"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: minima
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# SEO
+seo:
+  type: "Person"
+  name: "Vishwaraja Pathi"
+  description: "Software Engineer & Technology Enthusiast"
+  url: "https://vishwarajapathi.github.io"
+  image: "/images/profile.jpg"
+  social:
+    linkedin: "vishwaraja-pathi"
+    github: "vishwarajapathi"
+
+# Navigation
+navigation:
+  - title: "Home"
+    url: "/"
+  - title: "About"
+    url: "/#about"
+  - title: "Experience"
+    url: "/#experience"
+  - title: "Skills"
+    url: "/#skills"
+  - title: "Projects"
+    url: "/#projects"
+  - title: "Contact"
+    url: "/#contact"
+
+# Social links
+social:
+  linkedin: "https://www.linkedin.com/in/vishwaraja-pathi/"
+  github: "https://github.com/vishwarajapathi"
+  email: "mailto:vishwarajapathi@example.com"
+
+# Exclude files from processing
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .gitignore
+  - .DS_Store
