@@ -387,10 +387,19 @@ section {
 }
 
 .timeline-item {
-    display: block;
+    display: flex;
     margin-bottom: 4rem;
     position: relative;
+    align-items: flex-start;
     transition: all 0.3s ease;
+}
+
+.timeline-item:nth-child(odd) {
+    flex-direction: row;
+}
+
+.timeline-item:nth-child(even) {
+    flex-direction: row-reverse;
 }
 
 .timeline-marker {
@@ -412,19 +421,20 @@ section {
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    width: 100%;
+    width: 45%;
     position: relative;
-    margin-left: 3rem;
     transition: all 0.3s ease;
     transform: translateY(0);
 }
 
 .timeline-item:nth-child(odd) .timeline-content {
-    margin-left: 3rem;
+    margin-right: auto;
+    margin-left: 0;
 }
 
 .timeline-item:nth-child(even) .timeline-content {
-    margin-left: 3rem;
+    margin-left: auto;
+    margin-right: 0;
 }
 
 .timeline-item:hover .timeline-content {
@@ -662,13 +672,15 @@ section {
     min-height: 100vh;
     display: flex;
     align-items: center;
+    padding: 100px 0;
 }
 
 .contact-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 4rem !important;
     align-items: start;
+    width: 100%;
 }
 
 .contact-info {
