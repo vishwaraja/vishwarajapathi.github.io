@@ -2,7 +2,7 @@
 title: "Vishwaraja Pathi - Portfolio"
 description: "Software Engineer & Technology Enthusiast"
 author: "Vishwaraja Pathi"
-email: "vishwarajapathi@example.com"
+email: "vishwa.raja@gmail.com"
 
 # Site settings
 baseurl: ""
@@ -28,7 +28,7 @@ seo:
   image: "/images/profile.jpg"
   social:
     linkedin: "vishwaraja-pathi"
-    github: "vishwarajapathi"
+    github: "vishwaraja"
 
 # Navigation
 navigation:
@@ -48,8 +48,8 @@ navigation:
 # Social links
 social:
   linkedin: "https://www.linkedin.com/in/vishwaraja-pathi/"
-  github: "https://github.com/vishwarajapathi"
-  email: "mailto:vishwarajapathi@example.com"
+  github: "https://github.com/vishwaraja"
+  email: "mailto:vishwa.raja@gmail.com"
 
 # Exclude files from processing
 exclude:
